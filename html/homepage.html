@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Homepage: {% block title %}{% endblock %}</title>
+</head>
+
+<body>
+
+    <nav class="bg-light border navbar navbar-expand-md navbar-light position-relative" style="padding-top: 1.5rem; padding-bottom: 1.5rem;"col>
+        <div class="container-fluid">
+
+            <!-- Centered Welcome Message -->
+            <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="/">
+                <h1 style="margin: 0; font-size: 2.75rem;">
+                    <span style="color:#FF5733;">W</span>
+                    <span style="color:#FF8D1A;">e</span>
+                    <span style="color:#FFC300;">l</span>
+                    <span style="color:#8D33FF;">c</span>
+                    <span style="color:#33FF57;">o</span>
+                    <span style="color:#1AFFD5;">m</span>
+                    <span style="color:#3380FF;">e</span>
+                </h1>
+            </a>
+
+        </div>
+    </nav>
+
+    <main class="container py-5 text-center">
+        {% block main %}{% endblock %}
+    </main>
+
+</body>
+
+</html>
