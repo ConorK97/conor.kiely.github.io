@@ -92,7 +92,7 @@ def index():
 def game():
     name = session.get('name')
     if not name:
-        return redirect(url_for('index'))
+        return redirect(url_for('gameIndex'))
     return render_template("game.html", name=name)
 
 
