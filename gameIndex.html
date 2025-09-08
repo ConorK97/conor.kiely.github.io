@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+    <!-- <h1>WordBuilder</h1> -->
+    <p>Build the highest-scoring word from 12 random letters!</p>
+
+    <form method="POST">
+        <div class="mb-3">
+            <input type="text" name="player_name" placeholder="Enter your name" required class="form-control w-50 mx-auto">
+        </div>
+        <button type="submit" class="btn btn-primary">Start Game</button>
+    </form>
+{% endblock %}
